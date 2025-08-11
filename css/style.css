@@ -119,11 +119,17 @@ main {
 
 .card {
   background-color: #ffffff;
-  border: 1px solid #dcdcdc;
+  border: 3px solid transparent; /*#dcdcdc;*/
   border-radius: 10px;
   padding: 1.5em;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   text-align: center;
+}
+
+.card:hover, .card:focus-within {
+  border-width: 3px;
+  border-color: rgba(59,44,33,1);
+  z-index: 10;
 }
 
 img {
